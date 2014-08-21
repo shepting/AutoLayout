@@ -10,12 +10,13 @@ import UIKit
 
 class MessageView: UIView {
 
-    let profile: UIImageView
-    let text: UITextView
-    let timestamp: UILabel
-    let favorite: UIButton
-    let share: UIButton
-    let name: UILabel
+    let profile: UIImageView = UIImageView();
+    let text: UITextView = UITextView();
+    let timestamp: UILabel = UILabel();
+    let favorite: UIButton = UIButton();
+    let share: UIButton = UIButton();
+    let name: UILabel = UILabel();
 
-    func var
+//    func var
+
 }
