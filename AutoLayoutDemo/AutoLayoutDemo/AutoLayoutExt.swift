@@ -19,4 +19,9 @@ extension UIView {
         self.addConstraints(constraints)
     }
 
+    func constraintWithFormat(format: String, views: [String: UIView]) -> NSLayoutConstraint {
+        let constraint = NSLayoutConstraint.constraintsWithVisualFormat(format, options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views).first as NSLayoutConstraint
+
+        return constraint
+    }
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PaddedImageView" customModule="AutoLayoutDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="283"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="57p-32-1wy">
+                    <rect key="frame" x="0.0" y="14" width="230" height="253"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="57p-32-1wy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="9KO-uN-dCJ"/>
+                <constraint firstItem="57p-32-1wy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RwV-tz-GfA"/>
+                <constraint firstAttribute="bottom" secondItem="57p-32-1wy" secondAttribute="bottom" constant="16" id="jTg-9U-gaf"/>
+                <constraint firstAttribute="trailing" secondItem="57p-32-1wy" secondAttribute="trailing" id="q3f-oy-ft4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="14" y="177.5"/>
+        </view>
+    </objects>
+</document>

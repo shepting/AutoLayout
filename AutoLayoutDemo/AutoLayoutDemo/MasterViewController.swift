@@ -10,7 +10,6 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
     var objects = NSMutableArray()
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {

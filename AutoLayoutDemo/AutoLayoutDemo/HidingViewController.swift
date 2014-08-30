@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import ExperimentalViews
 
 class HidingViewController: UIViewController {
-    @IBOutlet weak var secondView: UIView!
+    @IBOutlet weak var secondView: PaddedView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,4 +30,15 @@ class HidingViewController: UIViewController {
         println(self.secondView.intrinsicContentSize())
     }
 
+    @IBAction func didDragSlider(slider: UISlider) {
+        let value = slider.value * 20
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            self.secondView.padding = CGFloat(value)
+            self.view.setNeedsLayout()
+            self.view.layoutIfNeeded()
+            
+            println("Size: \(self.secondView.intrinsicContentSize().height)")
+        })
+    }
 }
+

@@ -1,15 +1,15 @@
 //
-//  AutoLayoutDemoTests.swift
-//  AutoLayoutDemoTests
+//  ExperimentalViewsTests.swift
+//  ExperimentalViewsTests
 //
-//  Created by Steven Hepting on 8/14/14.
+//  Created by Steven Hepting on 8/29/14.
 //  Copyright (c) 2014 Protospec. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class AutoLayoutDemoTests: XCTestCase {
+class ExperimentalViewsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

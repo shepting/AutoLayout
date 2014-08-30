@@ -34,6 +34,20 @@
                ReferencedContainer = "container:AutoLayoutDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "378541B519B1716D00789130"
+               BuildableName = "ExperimentalViewsTests.xctest"
+               BlueprintName = "ExperimentalViewsTests"
+               ReferencedContainer = "container:AutoLayoutDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "373F78D1199DB87900ECC2A3"
                BuildableName = "AutoLayoutDemoTests.xctest"
                BlueprintName = "AutoLayoutDemoTests"
+               ReferencedContainer = "container:AutoLayoutDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "378541B519B1716D00789130"
+               BuildableName = "ExperimentalViewsTests.xctest"
+               BlueprintName = "ExperimentalViewsTests"
                ReferencedContainer = "container:AutoLayoutDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
