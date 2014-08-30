@@ -10,18 +10,9 @@ import UIKit
 import ExperimentalViews
 
 class HidingViewController: UIViewController {
+    @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var secondView: PaddedView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBOutlet weak var thirdView: UIView!
     
     @IBAction func didTapHide() {
         println("Hide!")
@@ -32,13 +23,15 @@ class HidingViewController: UIViewController {
 
     @IBAction func didDragSlider(slider: UISlider) {
         let value = slider.value * 20
-        UIView.animateWithDuration(0.1, animations: { () -> Void in
-            self.secondView.padding = CGFloat(value)
-            self.view.setNeedsLayout()
-            self.view.layoutIfNeeded()
-            
-            println("Size: \(self.secondView.intrinsicContentSize().height)")
-        })
+        self.secondView.padding = CGFloat(value)
+        
+        self.secondView.invalidateIntrinsicContentSize()
+        self.secondView.layoutIfNeeded()
+        
+        println("Padding: \(self.secondView.padding)")
+        println("Base height: \(self.secondView.baseHeight)")
+        println("Intrinsic size height: \(self.secondView.intrinsicContentSize().height)")
+        println("Frame height: \(self.secondView.frame.size.height)")
     }
 }
 

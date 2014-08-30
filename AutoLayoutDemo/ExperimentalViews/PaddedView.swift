@@ -10,18 +10,17 @@ import UIKit
 
 
 @IBDesignable public class PaddedView: UIView {
-    @IBInspectable public var padding:CGFloat = 20.0
-
+    @IBInspectable public var padding:CGFloat = 0.0
+    @IBInspectable public var baseHeight:CGFloat = 0.0
     
     
     public override func alignmentRectInsets() -> UIEdgeInsets {
-        println("Padding: \(padding)")
         return UIEdgeInsetsMake(-padding, 0, -padding, 0)
     }
     
     
     override public func intrinsicContentSize() -> CGSize {
-        let height: CGFloat = 32 + 2 * padding
+        let height: CGFloat = baseHeight + 2 * padding
         return CGSize(width: 250, height: height)
     }
 //    public override func frameForAlignmentRect(alignmentRect: CGRect) -> CGRect {

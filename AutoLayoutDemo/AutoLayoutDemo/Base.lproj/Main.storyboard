@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCD-Pg-KZF" customClass="PaddedView" customModule="ExperimentalViews">
-                                <rect key="frame" x="26" y="154" width="548" height="32"/>
+                                <rect key="frame" x="26" y="154" width="548" height="40"/>
                                 <color key="backgroundColor" red="0.046622706089072333" green="0.16787960547041197" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="padding">
@@ -59,21 +59,24 @@
                                         <color key="value" red="0.50167713994565211" green="0.50167713994565211" blue="0.50167713994565211" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="baseHeight">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z2h-Hg-eUs">
-                                <rect key="frame" x="32" y="318" width="544" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z2h-Hg-eUs">
+                                <rect key="frame" x="32" y="366" width="544" height="31"/>
                                 <connections>
                                     <action selector="didDragSlider:" destination="zey-23-8Z0" eventType="valueChanged" id="v7H-gX-8vn"/>
                                 </connections>
                             </slider>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pY-eP-ruG">
-                                <rect key="frame" x="26" y="206" width="548" height="32"/>
+                                <rect key="frame" x="26" y="214" width="548" height="32"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="HvA-V6-trd"/>
@@ -100,7 +103,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="firstView" destination="XvQ-rN-P8v" id="SAn-1I-i2e"/>
                         <outlet property="secondView" destination="zCD-Pg-KZF" id="tqc-bi-3Tu"/>
+                        <outlet property="thirdView" destination="1pY-eP-ruG" id="AeL-Co-mA5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uu-We-J5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
