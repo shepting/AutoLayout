@@ -16,9 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
-        // Override point for customization after application launch.
-//        let tableViewController = self.window!.rootViewController as UITableViewController
-//        let navigationController = tableViewController.navigationController
+
+        DCIntrospect.sharedIntrospector().start()
+//        FLEXManager.sharedManager().showExplorer()
+        
+        let oneMB = 1024*1024
+        let cache = NSURLCache(memoryCapacity: 100*oneMB, diskCapacity: 200*oneMB, diskPath: "urlCache")
+        NSURLCache.setSharedURLCache(cache)
         return true
     }
 

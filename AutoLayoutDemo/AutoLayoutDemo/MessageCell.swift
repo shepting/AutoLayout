@@ -21,5 +21,28 @@ class MessageCell: UITableViewCell {
         textView.text = message.text
         timestamp.text = message.timeAgo
         name.text = message.author.name
+        
+        self.profile.layer.cornerRadius = 52.0/2
+        self.profile.clipsToBounds = true
+        self.profile.layer.borderWidth = 0.5;
+        self.profile.layer.borderColor = UIColor.lightGrayColor().CGColor
+        
+        NSURLSession.sharedSession().dataTaskWithURL(message.author.profileURL, completionHandler: {
+            [unowned self] (data, response, error) -> Void in
+            if (error != nil) {
+                println("Error: ", error)
+                return
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                self.profile.image = UIImage(data: data)
+            })
+
+        }).resume()
+        
+    }
+    
+    override func prepareForReuse() {
+        self.profile.image = nil;
     }
 }

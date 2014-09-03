@@ -29,6 +29,6 @@ internal class Message: NSObject {
 
         text = samplePosts[index]
     
-        timeAgo = String(format: "%d h", arc4random_uniform(24))
+        timeAgo = String(format: "%d h", arc4random_uniform(36) + 1)
     }
 }

@@ -24,4 +24,8 @@ extension UIView {
 
         return constraint
     }
+
+    func description() -> NSString {
+        return "MyView"
+    }
 }

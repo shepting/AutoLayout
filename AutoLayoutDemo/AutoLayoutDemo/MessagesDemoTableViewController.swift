@@ -28,11 +28,6 @@ class MessagesDemoTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 100
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        self.tableView.reloadData()
-    }
-
 
     // MARK: - Table view data source
 

@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 @IBDesignable public class PaddedView: UIView {
     @IBInspectable public var padding:CGFloat = 0.0
     @IBInspectable public var baseHeight:CGFloat = 0.0
@@ -23,13 +22,6 @@ import UIKit
         let height: CGFloat = baseHeight + 2 * padding
         return CGSize(width: 250, height: height)
     }
-//    public override func frameForAlignmentRect(alignmentRect: CGRect) -> CGRect {
-//        return super.frameForAlignmentRect(alignmentRect)
-//    }
-//    
-//    public override func alignmentRectForFrame(frame: CGRect) -> CGRect {
-//        return super.alignmentRectForFrame(frame)
-//    }
     
     @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
         didSet {
@@ -48,4 +40,5 @@ import UIKit
             layer.cornerRadius = cornerRadius
         }
     }
+    
 }
