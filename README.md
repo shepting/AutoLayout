@@ -1,4 +1,4 @@
-AutoLayout
+Auto Layout
 ==========
 
 Demo app and docs for various Auto Layout issues that crop up during developement.
