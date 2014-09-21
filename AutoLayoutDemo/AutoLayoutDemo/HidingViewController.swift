@@ -28,10 +28,10 @@ class HidingViewController: UIViewController {
         self.secondView.invalidateIntrinsicContentSize()
         self.secondView.layoutIfNeeded()
         
-//        println("Padding: \(self.secondView.padding)")
-//        println("Base height: \(self.secondView.baseHeight)")
-//        println("Intrinsic size height: \(self.secondView.intrinsicContentSize().height)")
-//        println("Frame height: \(self.secondView.frame.size.height)")
+        println("Padding: \(self.secondView.padding)")
+        println("Base height: \(self.secondView.baseHeight)")
+        println("Intrinsic size height: \(self.secondView.intrinsicContentSize().height)")
+        println("Frame height: \(self.secondView.frame.size.height)")
     }
 }
 

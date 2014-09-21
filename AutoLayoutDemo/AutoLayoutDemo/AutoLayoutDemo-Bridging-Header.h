@@ -10,6 +10,5 @@
 #define AutoLayoutDemo_AutoLayoutDemo_Bridging_Header_h
 
 #import <DCIntrospect-ARC/DCIntrospect.h>
-#import <FLEX/FLEXManager.h>
 
 #endif

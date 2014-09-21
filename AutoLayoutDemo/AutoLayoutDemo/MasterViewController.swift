@@ -12,8 +12,8 @@ class MasterViewController: UITableViewController {
 
     var objects = NSMutableArray()
 
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        println("Segue: %@", segue.identifier)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        println("Segue: %@", segue.identifier)
     }
 
 }
