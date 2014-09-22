@@ -22,5 +22,27 @@ This is the best explanation:
 http://devetc.org/code/2014/07/07/auto-layout-and-views-that-wrap.html
 
 
+LLDB Shortcuts
+===============
+You can place shortcuts in your `.lldbinit` file to be used when paused in the Xcode debugger.
+
+
+Ambiguous Layout 
+=================
+With Interface Builder, ambiguous layouts aren't always immediately obvious because `PrototypingLayoutConstraint`s are creating for any ambiguous sizing or positioning details.
+
+```
+<NSIBPrototypingLayoutConstraint:0x7a2472e0 'IB auto generated at build time for view with ambiguity'  H:[UIView:0x78e7c570(258@251)] priority:251>		Marker:0x7a2472e0:IB auto generated at build time for view with ambiguity.posErrorMarker{id: 46}
+```
+You can see them in logs or when you print out the array of `.constraints` on any `UIView`.
+
+
+```
+# Print an Auto Layout trace
+command alias at expr -o -- [[UIWindow keyWindow] _autolayoutTrace]
+```
+
+
+
 [alignment_screenshot]: https://www.dropbox.com/s/zshs8hsjrgr7iwh/alignmentRect.png?dl=1
 [messages_screenshot]: https://www.dropbox.com/s/m5gpmpd227df2i2/Messages%20View%20Controller.png?dl=1
