@@ -10,7 +10,7 @@ import UIKit
 
 class MessagesDemoTableViewController: UITableViewController {
     var messages: [Message] = Array()
-    
+
     func commonInit() {
         for index in 1...100 {
             messages.insert(Message(), atIndex: 0)

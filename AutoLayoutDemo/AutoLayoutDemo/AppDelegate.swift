@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
 
-        DCIntrospect.sharedIntrospector().start()
+//        DCIntrospect.sharedIntrospector().start()
 //        FLEXManager.sharedManager().showExplorer()
         
         let oneMB = 1024*1024

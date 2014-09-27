@@ -14,7 +14,7 @@ import UIKit
 internal class Message: NSObject {
     internal let text: String
     internal let timeAgo: String
-    let author: User = User()
+    var author: User?
     
     override init() {
         let samplePosts = ["Locavore Shoreditch semiotics, sustainable chia fashion axe stumptown brunch slow-carb.",
