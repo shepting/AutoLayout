@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RMx-3f-FxP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RMx-3f-FxP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -59,7 +59,7 @@
                                         <color key="value" red="0.50167713994565211" green="0.50167713994565211" blue="0.50167713994565211" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="22"/>
@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="messageCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="115" id="Rgo-hT-M5s" customClass="MessageCell" customModule="AutoLayoutDemo" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="messageCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="115" id="Rgo-hT-M5s" customClass="MessageTableViewCell" customModule="ExperimentalViews">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" tableViewCell="Rgo-hT-M5s" id="bZz-Uq-BIX">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -216,61 +216,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omU-yA-VQS">
-                                <rect key="frame" x="16" y="84" width="568" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="568" id="TwA-Pb-P4t"/>
-                                </constraints>
-                                <string key="text">Completely synergize resource relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cu-Wq-i1D" customClass="AutoAdjustingLabel" customModule="AutoLayoutDemo" customModuleProvider="target">
-                                <rect key="frame" x="16" y="155" width="568" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="568" id="yGb-vd-lfQ"/>
-                                </constraints>
-                                <string key="text">Completely synergize resource relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-29-kt8">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-29-kt8">
                                 <rect key="frame" x="56" y="304" width="456" height="31"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="wSs-Tp-Vjp" eventType="valueChanged" id="8bz-05-oo8"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e31-c3-1g0">
+                                <rect key="frame" x="16" y="183" width="568" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cu-Wq-i1D" customClass="AutoAdjustingLabel" customModule="AutoLayoutDemo" customModuleProvider="target">
+                                        <rect key="frame" x="-3" y="58" width="568" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="568" id="yGb-vd-lfQ"/>
+                                        </constraints>
+                                        <string key="text">Completely synergize resource relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83198879079999999" green="0.83198879079999999" blue="0.83198879079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="S2Z-2B-IAH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLn-fy-zrY">
+                                <rect key="frame" x="16" y="72" width="568" height="103"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omU-yA-VQS">
+                                        <rect key="frame" x="-75" y="31" width="568" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="568" id="TwA-Pb-P4t"/>
+                                        </constraints>
+                                        <string key="text">Completely synergize resource relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83198879076086962" green="0.83198879076086962" blue="0.83198879076086962" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="sIG-99-BS4"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Cu-Wq-i1D" firstAttribute="top" secondItem="omU-yA-VQS" secondAttribute="bottom" constant="30" id="04l-ga-Rmq"/>
-                            <constraint firstItem="3K0-29-kt8" firstAttribute="top" secondItem="6Cu-Wq-i1D" secondAttribute="bottom" constant="108" id="17j-Kl-dVa"/>
-                            <constraint firstItem="omU-yA-VQS" firstAttribute="top" secondItem="rPo-Om-JY3" secondAttribute="bottom" constant="20" id="9Sq-Kv-cEe"/>
+                            <constraint firstItem="sLn-fy-zrY" firstAttribute="leading" secondItem="e31-c3-1g0" secondAttribute="leading" id="5io-SV-gc4"/>
                             <constraint firstItem="3K0-29-kt8" firstAttribute="leading" secondItem="r30-Bq-AQL" secondAttribute="leadingMargin" constant="42" id="AyQ-tb-LdG"/>
-                            <constraint firstItem="omU-yA-VQS" firstAttribute="trailing" secondItem="r30-Bq-AQL" secondAttribute="trailingMargin" id="Ghz-Dz-v2t"/>
-                            <constraint firstAttribute="centerX" secondItem="omU-yA-VQS" secondAttribute="centerX" id="ZJs-1B-XQB"/>
-                            <constraint firstItem="6Cu-Wq-i1D" firstAttribute="leading" secondItem="r30-Bq-AQL" secondAttribute="leadingMargin" id="cvC-bg-Fs2"/>
+                            <constraint firstItem="sLn-fy-zrY" firstAttribute="trailing" secondItem="r30-Bq-AQL" secondAttribute="trailingMargin" id="Lbp-GB-mLM"/>
+                            <constraint firstItem="sLn-fy-zrY" firstAttribute="leading" secondItem="r30-Bq-AQL" secondAttribute="leadingMargin" id="ay7-ho-ajF"/>
+                            <constraint firstItem="sLn-fy-zrY" firstAttribute="trailing" secondItem="e31-c3-1g0" secondAttribute="trailing" id="blk-bC-GoX"/>
+                            <constraint firstItem="sLn-fy-zrY" firstAttribute="top" secondItem="rPo-Om-JY3" secondAttribute="bottom" constant="8" symbolic="YES" id="d4Z-Jm-53a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3K0-29-kt8" secondAttribute="trailing" constant="74" id="dhV-D1-diD"/>
-                            <constraint firstItem="6Cu-Wq-i1D" firstAttribute="trailing" secondItem="r30-Bq-AQL" secondAttribute="trailingMargin" id="f3h-wX-bhh"/>
-                            <constraint firstItem="omU-yA-VQS" firstAttribute="leading" secondItem="r30-Bq-AQL" secondAttribute="leadingMargin" id="xbU-DC-1IL"/>
-                            <constraint firstAttribute="centerX" secondItem="6Cu-Wq-i1D" secondAttribute="centerX" id="xzT-TP-AiA"/>
+                            <constraint firstItem="e31-c3-1g0" firstAttribute="top" secondItem="sLn-fy-zrY" secondAttribute="bottom" constant="8" symbolic="YES" id="lfV-Me-Fdw"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Ghz-Dz-v2t"/>
-                                <exclude reference="xbU-DC-1IL"/>
-                                <exclude reference="cvC-bg-Fs2"/>
-                                <exclude reference="f3h-wX-bhh"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="regularLabel" destination="omU-yA-VQS" id="1Ue-Ts-nkW"/>
                         <outlet property="regularWidth" destination="TwA-Pb-P4t" id="XoZ-uf-FvV"/>
                         <outlet property="sizingLabel" destination="6Cu-Wq-i1D" id="xhI-c6-QNp"/>
                         <outlet property="sizingWidth" destination="yGb-vd-lfQ" id="y1d-eS-Uwc"/>
+                        <outlet property="slider" destination="3K0-29-kt8" id="jtx-WB-B7S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qw-ln-DvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

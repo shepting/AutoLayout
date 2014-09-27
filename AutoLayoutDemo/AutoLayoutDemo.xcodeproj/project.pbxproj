@@ -14,9 +14,6 @@
 		373F78CB199DB87800ECC2A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373F78C9199DB87800ECC2A3 /* Main.storyboard */; };
 		373F78CD199DB87800ECC2A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373F78CC199DB87800ECC2A3 /* Images.xcassets */; };
 		373F78E3199E8D8500ECC2A3 /* AutoLayoutExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F78E2199E8D8500ECC2A3 /* AutoLayoutExt.swift */; };
-		373F78E719A1AAB400ECC2A3 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F78E619A1AAB400ECC2A3 /* MessageCell.swift */; };
-		3785415219AFFAF000789130 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785415119AFFAF000789130 /* Message.swift */; };
-		3785415419AFFB4700789130 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785415319AFFB4700789130 /* User.swift */; };
 		3785415619B0062600789130 /* MessagesDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785415519B0062600789130 /* MessagesDemoTableViewController.swift */; };
 		378541A219B16C4900789130 /* AutoAdjustingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378541A119B16C4900789130 /* AutoAdjustingLabel.swift */; };
 		378541C019B1716D00789130 /* ExperimentalViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378541AC19B1716D00789130 /* ExperimentalViews.framework */; };
@@ -27,6 +24,14 @@
 		378D528019B569CF00688310 /* TextSizingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D527F19B569CF00688310 /* TextSizingViewController.swift */; };
 		37AEC5CC19A5806A009F2D0C /* HidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC5CB19A5806A009F2D0C /* HidingViewController.swift */; };
 		37C79C4D19AE7A530013EFF2 /* KeyboardAvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372525CE19A8207400D3BBE9 /* KeyboardAvoider.swift */; };
+		37CF9F0E19D74917005D9007 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF9F0D19D74917005D9007 /* File.swift */; };
+		37CF9F1019D751A9005D9007 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF9F0F19D751A9005D9007 /* MessageTableViewCell.swift */; };
+		37CF9F1119D75356005D9007 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785415119AFFAF000789130 /* Message.swift */; };
+		37CF9F1219D7535F005D9007 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785415319AFFB4700789130 /* User.swift */; };
+		37CF9F1319D753D6005D9007 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F78E619A1AAB400ECC2A3 /* MessageCell.swift */; };
+		37CF9F1419D753EA005D9007 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785415119AFFAF000789130 /* Message.swift */; };
+		37CF9F1519D753EA005D9007 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785415319AFFB4700789130 /* User.swift */; };
+		37CF9F1619D753F6005D9007 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F78E619A1AAB400ECC2A3 /* MessageCell.swift */; };
 		37D4EFB719CF69FB007E9554 /* AmbiguousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4EFB619CF69FB007E9554 /* AmbiguousViewController.swift */; };
 		C0CDE499027947F8946F5821 /* libPods-AutoLayoutDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7287465633491C84AAF907 /* libPods-AutoLayoutDemo.a */; };
 /* End PBXBuildFile section */
@@ -85,6 +90,8 @@
 		378541D119B5121300789130 /* DemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		378D527F19B569CF00688310 /* TextSizingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSizingViewController.swift; sourceTree = "<group>"; };
 		37AEC5CB19A5806A009F2D0C /* HidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HidingViewController.swift; sourceTree = "<group>"; };
+		37CF9F0D19D74917005D9007 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		37CF9F0F19D751A9005D9007 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		37D4EFB619CF69FB007E9554 /* AmbiguousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbiguousViewController.swift; sourceTree = "<group>"; };
 		4F7287465633491C84AAF907 /* libPods-AutoLayoutDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoLayoutDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953F6DB8D3A54EC9A8C7CBD6 /* Pods-AutoLayoutDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.xcconfig"; path = "../Pods/Pods-AutoLayoutDemo.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +209,8 @@
 				378541AE19B1716D00789130 /* Supporting Files */,
 				378541CB19B171B200789130 /* PaddedView.swift */,
 				378541D119B5121300789130 /* DemoView.swift */,
+				37CF9F0D19D74917005D9007 /* File.swift */,
+				37CF9F0F19D751A9005D9007 /* MessageTableViewCell.swift */,
 			);
 			path = ExperimentalViews;
 			sourceTree = "<group>";
@@ -371,20 +380,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CF9F1519D753EA005D9007 /* User.swift in Sources */,
 				378D528019B569CF00688310 /* TextSizingViewController.swift in Sources */,
 				378541A219B16C4900789130 /* AutoAdjustingLabel.swift in Sources */,
 				370F2EFB19B52C7000A51872 /* DemoView.swift in Sources */,
-				373F78E719A1AAB400ECC2A3 /* MessageCell.swift in Sources */,
 				373F78C6199DB87800ECC2A3 /* MasterViewController.swift in Sources */,
 				370F2EFA19B52B5900A51872 /* IntrinsicViewController.swift in Sources */,
 				3785415619B0062600789130 /* MessagesDemoTableViewController.swift in Sources */,
-				3785415219AFFAF000789130 /* Message.swift in Sources */,
 				37AEC5CC19A5806A009F2D0C /* HidingViewController.swift in Sources */,
 				37D4EFB719CF69FB007E9554 /* AmbiguousViewController.swift in Sources */,
-				3785415419AFFB4700789130 /* User.swift in Sources */,
 				373F78E3199E8D8500ECC2A3 /* AutoLayoutExt.swift in Sources */,
+				37CF9F1419D753EA005D9007 /* Message.swift in Sources */,
 				373F78C4199DB87800ECC2A3 /* AppDelegate.swift in Sources */,
 				37C79C4D19AE7A530013EFF2 /* KeyboardAvoider.swift in Sources */,
+				37CF9F1619D753F6005D9007 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +402,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				378541CC19B171B200789130 /* PaddedView.swift in Sources */,
+				37CF9F1019D751A9005D9007 /* MessageTableViewCell.swift in Sources */,
+				37CF9F1219D7535F005D9007 /* User.swift in Sources */,
+				37CF9F1119D75356005D9007 /* Message.swift in Sources */,
+				37CF9F0E19D74917005D9007 /* File.swift in Sources */,
 				378541D219B5121300789130 /* DemoView.swift in Sources */,
+				37CF9F1319D753D6005D9007 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
