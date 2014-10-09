@@ -14,6 +14,10 @@ class HidingViewController: UIViewController {
     @IBOutlet weak var secondView: PaddedView!
     @IBOutlet weak var thirdView: UIView!
     
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.title = NSLocalizedString("Alignment", comment: "")
+    }
     @IBAction func didTapHide() {
         println("Hide!")
         self.secondView.hidden = !self.secondView.hidden

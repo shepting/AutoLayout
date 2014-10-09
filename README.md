@@ -6,6 +6,10 @@ Demo app and docs for various Auto Layout issues that crop up during developemen
 ![AlignmentRect][alignment_screenshot]
 ![Messages Table View][messages_screenshot]
 
+Other Resources
+=================
+Excellent overview of using Interface Builder with loads of GIFs to demo each step. Just the first half deals directly with IB, the second half is a little more specific for handling size classes): http://mathewsanders.com/designing-adaptive-layouts-for-iphone-6-plus/
+
 
 TableViews
 ==========
@@ -42,7 +46,14 @@ You can see them in logs or when you print out the array of `.constraints` on an
 command alias at expr -o -- [[UIWindow keyWindow] _autolayoutTrace]
 ```
 
+Resources
+================
+ * http://mathewsanders.com/designing-adaptive-layouts-for-iphone-6-plus
+ * DCIntrospect
+ *
+ 
 
+=================
 
 [alignment_screenshot]: https://www.dropbox.com/s/zshs8hsjrgr7iwh/alignmentRect.png?dl=1
 [messages_screenshot]: https://www.dropbox.com/s/m5gpmpd227df2i2/Messages%20View%20Controller.png?dl=1

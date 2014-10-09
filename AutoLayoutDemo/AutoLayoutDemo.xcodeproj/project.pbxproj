@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		370F2EFA19B52B5900A51872 /* IntrinsicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F2EF919B52B5900A51872 /* IntrinsicViewController.swift */; };
 		370F2EFB19B52C7000A51872 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378541D119B5121300789130 /* DemoView.swift */; };
+		3736059319E0D29700B18112 /* KeyboardHidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736059219E0D29700B18112 /* KeyboardHidingViewController.swift */; };
+		3736059519E0D3B600B18112 /* GenericLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3736059419E0D3B600B18112 /* GenericLogo.jpeg */; };
 		373F78C4199DB87800ECC2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F78C3199DB87800ECC2A3 /* AppDelegate.swift */; };
 		373F78C6199DB87800ECC2A3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F78C5199DB87800ECC2A3 /* MasterViewController.swift */; };
 		373F78CB199DB87800ECC2A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373F78C9199DB87800ECC2A3 /* Main.storyboard */; };
@@ -71,6 +73,8 @@
 		370F2EF719B525FE00A51872 /* AutoLayoutDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		370F2EF919B52B5900A51872 /* IntrinsicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntrinsicViewController.swift; sourceTree = "<group>"; };
 		372525CE19A8207400D3BBE9 /* KeyboardAvoider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoider.swift; sourceTree = "<group>"; };
+		3736059219E0D29700B18112 /* KeyboardHidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHidingViewController.swift; sourceTree = "<group>"; };
+		3736059419E0D3B600B18112 /* GenericLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = GenericLogo.jpeg; path = Images.xcassets/GenericLogo.jpeg; sourceTree = "<group>"; };
 		373F78BE199DB87800ECC2A3 /* AutoLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		373F78C2199DB87800ECC2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		373F78C3199DB87800ECC2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				953F6DB8D3A54EC9A8C7CBD6 /* Pods-AutoLayoutDemo.xcconfig */,
 				370F2EF719B525FE00A51872 /* AutoLayoutDemo-Bridging-Header.h */,
 				373F78CC199DB87800ECC2A3 /* Images.xcassets */,
+				3736059419E0D3B600B18112 /* GenericLogo.jpeg */,
 				373F78C2199DB87800ECC2A3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -180,6 +185,7 @@
 				370F2EF919B52B5900A51872 /* IntrinsicViewController.swift */,
 				378D527F19B569CF00688310 /* TextSizingViewController.swift */,
 				37D4EFB619CF69FB007E9554 /* AmbiguousViewController.swift */,
+				3736059219E0D29700B18112 /* KeyboardHidingViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				373F78CB199DB87800ECC2A3 /* Main.storyboard in Resources */,
+				3736059519E0D3B600B18112 /* GenericLogo.jpeg in Resources */,
 				373F78CD199DB87800ECC2A3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +389,7 @@
 			files = (
 				37CF9F1519D753EA005D9007 /* User.swift in Sources */,
 				378D528019B569CF00688310 /* TextSizingViewController.swift in Sources */,
+				3736059319E0D29700B18112 /* KeyboardHidingViewController.swift in Sources */,
 				378541A219B16C4900789130 /* AutoAdjustingLabel.swift in Sources */,
 				370F2EFB19B52C7000A51872 /* DemoView.swift in Sources */,
 				373F78C6199DB87800ECC2A3 /* MasterViewController.swift in Sources */,

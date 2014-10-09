@@ -16,6 +16,7 @@ class IntrinsicViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         println("Big Size: %@", NSStringFromCGSize(self.bigView.intrinsicContentSize()))
         println("Blue Size: %@", NSStringFromCGSize(self.blueView.intrinsicContentSize()))
+        print(self.blueView.constraints())
 
     }
 }

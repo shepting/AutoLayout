@@ -30,6 +30,7 @@ class KeyboardAvoider: UIView {
         
         heightConstraint = self.constraintWithFormat("V:[self(0)]", views:["self": self])
         addConstraint(heightConstraint)
+        self.addVisualConstraints("H:[self(300@250)]", views: ["self":self]) // Low priority default width
     }
     
     func keyboardWillShow(notification: NSNotification) {
@@ -50,6 +51,10 @@ class KeyboardAvoider: UIView {
     func keyboardWillHide(notification: NSNotification) {
         heightConstraint.constant = 0.0
         animateSizeChange()
+    }
+    
+    override func intrinsicContentSize() -> CGSize {
+        return CGSizeMake(320, UIViewNoIntrinsicMetric)
     }
     
     func animateSizeChange() {

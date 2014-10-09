@@ -13,11 +13,7 @@ import UIKit
     override func didMoveToSuperview() {
         self.backgroundColor = UIColor.blueColor()
     }
-    
-//    required init(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
-//
+
     override func intrinsicContentSize() -> CGSize {
         return CGSize(width: 50, height: 50)
     }
