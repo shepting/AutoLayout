@@ -34,14 +34,14 @@ import UIKit
     func configureWithMessage(message: Message) {
         textView.text = message.text
         timestamp.text = message.timeAgo
-        name.text = message.author.name
+        name.text = message.author!.name
         
         self.profile.layer.cornerRadius = 52.0/2
         self.profile.clipsToBounds = true
         self.profile.layer.borderWidth = 0.5;
         self.profile.layer.borderColor = UIColor.lightGrayColor().CGColor
         
-        NSURLSession.sharedSession().dataTaskWithURL(message.author.profileURL, completionHandler: {
+        NSURLSession.sharedSession().dataTaskWithURL(message.author!.profileURL, completionHandler: {
             [unowned self] (data, response, error) -> Void in
 
             if let error = error {

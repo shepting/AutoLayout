@@ -11,20 +11,11 @@ import UIKit
 class MessagesDemoTableViewController: UITableViewController {
     var messages: [Message] = Array()
 
-    func commonInit() {
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         for index in 1...100 {
             messages.insert(Message(), atIndex: 0)
         }
-    }
-
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commonInit()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 100
     }

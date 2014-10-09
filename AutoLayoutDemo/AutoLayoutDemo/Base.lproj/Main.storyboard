@@ -69,9 +69,15 @@
                                         <real key="value" value="54"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="26" y="154" width="348" height="54"/>
+                                </variation>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z2h-Hg-eUs">
                                 <rect key="frame" x="32" y="380" width="544" height="31"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="32" y="380" width="344" height="31"/>
+                                </variation>
                                 <connections>
                                     <action selector="didDragSlider:" destination="zey-23-8Z0" eventType="valueChanged" id="v7H-gX-8vn"/>
                                 </connections>
@@ -83,6 +89,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="HvA-V6-trd"/>
                                     <constraint firstAttribute="height" constant="32" id="wjf-PZ-Kv7"/>
                                 </constraints>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="26" y="228" width="348" height="32"/>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,7 +156,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leV-Ma-7dF">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leV-Ma-7dF">
                                             <rect key="frame" x="550" y="70" width="35" height="48"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <state key="normal" title="Reply">
