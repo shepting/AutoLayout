@@ -33,4 +33,5 @@ class User: NSObject {
         let url = NSURL(string: profileURLs[index])
         profileURL = url
     }
+    
 }

@@ -36,6 +36,7 @@ class MessageCell: UITableViewCell {
             
             dispatch_async(dispatch_get_main_queue(), {
                 self.profile.image = UIImage(data: data)
+//                self.name = 
             })
 
         }).resume()

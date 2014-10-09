@@ -35,6 +35,9 @@
 		37CF9F1519D753EA005D9007 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785415319AFFB4700789130 /* User.swift */; };
 		37CF9F1619D753F6005D9007 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F78E619A1AAB400ECC2A3 /* MessageCell.swift */; };
 		37D4EFB719CF69FB007E9554 /* AmbiguousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4EFB619CF69FB007E9554 /* AmbiguousViewController.swift */; };
+		6A8BF58319D76F4C00A97046 /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BF58219D76F4C00A97046 /* MessageRepository.swift */; };
+		6A8BF58E19D772AF00A97046 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8BF58D19D772AF00A97046 /* Alamofire.framework */; };
+		6A8BF59019D7731F00A97046 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8BF58D19D772AF00A97046 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0CDE499027947F8946F5821 /* libPods-AutoLayoutDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7287465633491C84AAF907 /* libPods-AutoLayoutDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,17 @@
 				378541C119B1716D00789130 /* ExperimentalViews.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8BF58F19D7730200A97046 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6A8BF59019D7731F00A97046 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -98,6 +112,9 @@
 		37CF9F0F19D751A9005D9007 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		37D4EFB619CF69FB007E9554 /* AmbiguousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbiguousViewController.swift; sourceTree = "<group>"; };
 		4F7287465633491C84AAF907 /* libPods-AutoLayoutDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoLayoutDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8BF58219D76F4C00A97046 /* MessageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
+		6A8BF58D19D772AF00A97046 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../Alamofire/build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		6A8BF59119D77CCE00A97046 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		953F6DB8D3A54EC9A8C7CBD6 /* Pods-AutoLayoutDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.xcconfig"; path = "../Pods/Pods-AutoLayoutDemo.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8BF58E19D772AF00A97046 /* Alamofire.framework in Frameworks */,
 				C0CDE499027947F8946F5821 /* libPods-AutoLayoutDemo.a in Frameworks */,
 				378541C019B1716D00789130 /* ExperimentalViews.framework in Frameworks */,
 			);
@@ -124,6 +142,8 @@
 		373F78B5199DB87800ECC2A3 = {
 			isa = PBXGroup;
 			children = (
+				6A8BF59119D77CCE00A97046 /* MyPlayground.playground */,
+				6A8BF58D19D772AF00A97046 /* Alamofire.framework */,
 				373F78C0199DB87800ECC2A3 /* AutoLayoutDemo */,
 				378541AD19B1716D00789130 /* ExperimentalViews */,
 				373F78C1199DB87800ECC2A3 /* Supporting Files */,
@@ -195,6 +215,7 @@
 			children = (
 				3785415119AFFAF000789130 /* Message.swift */,
 				3785415319AFFB4700789130 /* User.swift */,
+				6A8BF58219D76F4C00A97046 /* MessageRepository.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -263,6 +284,7 @@
 				373F78BC199DB87800ECC2A3 /* Resources */,
 				353C8A6388C54492A1660FB6 /* Copy Pods Resources */,
 				378541C719B1716E00789130 /* Embed Frameworks */,
+				6A8BF58F19D7730200A97046 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,6 +415,7 @@
 				378541A219B16C4900789130 /* AutoAdjustingLabel.swift in Sources */,
 				370F2EFB19B52C7000A51872 /* DemoView.swift in Sources */,
 				373F78C6199DB87800ECC2A3 /* MasterViewController.swift in Sources */,
+				6A8BF58319D76F4C00A97046 /* MessageRepository.swift in Sources */,
 				370F2EFA19B52B5900A51872 /* IntrinsicViewController.swift in Sources */,
 				3785415619B0062600789130 /* MessagesDemoTableViewController.swift in Sources */,
 				37AEC5CC19A5806A009F2D0C /* HidingViewController.swift in Sources */,
@@ -531,6 +554,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/isaac/code/AutoLayout/Alamofire/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = AutoLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -594,6 +621,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/isaac/code/AutoLayout/Alamofire/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = AutoLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
