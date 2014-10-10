@@ -14,7 +14,7 @@ import UIKit
 internal class Message: NSObject {
     internal let text: String
     internal let timeAgo: String
-    var author: User?
+    var author: User
     
     override init() {
         let samplePosts = ["Locavore Shoreditch semiotics, sustainable chia fashion axe stumptown brunch slow-carb.",
@@ -30,5 +30,6 @@ internal class Message: NSObject {
         text = samplePosts[index]
     
         timeAgo = String(format: "%d h", arc4random_uniform(36) + 1)
+        author = User()
     }
 }

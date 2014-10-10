@@ -16,8 +16,13 @@ class MessagesDemoTableViewController: UITableViewController {
         for index in 1...100 {
             messages.insert(Message(), atIndex: 0)
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Specifically set the rowHeight
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 100
     }
 
     // MARK: - Table view data source
