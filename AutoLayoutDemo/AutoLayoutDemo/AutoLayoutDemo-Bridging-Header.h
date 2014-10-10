@@ -10,6 +10,7 @@
 #define AutoLayoutDemo_AutoLayoutDemo_Bridging_Header_h
 
 #import <UIKit/UIKit.h>
-#import <DCIntrospect-ARC/DCIntrospect.h>
+//#import <DCIntrospect-ARC/DCIntrospect.h>
+#import "../Pods/Headers/Build/DCIntrospect-ARC/DCIntrospect.h"
 
 #endif

@@ -6,9 +6,13 @@
 // project.
 
 
-// DCIntrospect-ARC
-#define COCOAPODS_POD_AVAILABLE_DCIntrospect_ARC
-#define COCOAPODS_VERSION_MAJOR_DCIntrospect_ARC 0
-#define COCOAPODS_VERSION_MINOR_DCIntrospect_ARC 0
-#define COCOAPODS_VERSION_PATCH_DCIntrospect_ARC 8
+// Debug build configuration
+#ifdef DEBUG
 
+  // DCIntrospect-ARC
+  #define COCOAPODS_POD_AVAILABLE_DCIntrospect_ARC
+  #define COCOAPODS_VERSION_MAJOR_DCIntrospect_ARC 0
+  #define COCOAPODS_VERSION_MINOR_DCIntrospect_ARC 0
+  #define COCOAPODS_VERSION_PATCH_DCIntrospect_ARC 8
+
+#endif

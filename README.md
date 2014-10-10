@@ -10,6 +10,8 @@ Other Resources
 =================
 Excellent overview of using Interface Builder with loads of GIFs to demo each step. Just the first half deals directly with IB, the second half is a little more specific for handling size classes): http://mathewsanders.com/designing-adaptive-layouts-for-iphone-6-plus/
 
+Great set of advanced tools for Auto Layout (including custom names in constraint logs): http://www.objc.io/issue-3/advanced-auto-layout-toolbox.html
+
 
 TableViews
 ==========

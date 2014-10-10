@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DCIntrospect-ARC"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DCIntrospect-ARC"
-OTHER_LDFLAGS = -ObjC -l"Pods-AutoLayoutDemo-DCIntrospect-ARC" -framework "QuartzCore"
+OTHER_LDFLAGS = -ObjC
 PODS_ROOT = ${SRCROOT}/Pods

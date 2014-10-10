@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class DemoView: UIView {
+@IBDesignable class DemoView: UIView, DebugPrintable, Printable {
     
     override func didMoveToSuperview() {
         self.backgroundColor = UIColor.blueColor()
@@ -18,5 +18,8 @@ import UIKit
         return CGSize(width: 50, height: 50)
     }
     
+    override var debugDescription: String { get { return "BlueView" } }
+    
+    override var description: String { get { return "BlueViewRelease" } }
     
 }
