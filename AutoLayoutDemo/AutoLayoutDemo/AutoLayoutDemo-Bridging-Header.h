@@ -9,6 +9,7 @@
 #ifndef AutoLayoutDemo_AutoLayoutDemo_Bridging_Header_h
 #define AutoLayoutDemo_AutoLayoutDemo_Bridging_Header_h
 
+#import <UIKit/UIKit.h>
 #import <DCIntrospect-ARC/DCIntrospect.h>
 
 #endif
