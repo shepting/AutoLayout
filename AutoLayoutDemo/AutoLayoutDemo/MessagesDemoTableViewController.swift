@@ -13,6 +13,8 @@ class MessagesDemoTableViewController: UITableViewController {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
+        // Simulate loading messages from cache/network etc.
         for index in 1...100 {
             messages.insert(Message(), atIndex: 0)
         }
@@ -32,10 +34,12 @@ class MessagesDemoTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        // Grab the message and the cell
+        let message = messages[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier("messageCell", forIndexPath: indexPath) as MessageCell
 
-        // Configure the cell...
-        let message = messages[indexPath.row]
+        // Configure the cell
         cell.configureWithMessage(message)
         
         return cell

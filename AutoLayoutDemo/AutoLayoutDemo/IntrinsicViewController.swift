@@ -12,6 +12,7 @@ class IntrinsicViewController: UIViewController {
 
     @IBOutlet weak var bigView: UIView!
     @IBOutlet weak var blueView: DemoView!
+    @IBOutlet weak var greenView: UIView!
     
     override func viewDidAppear(animated: Bool) {
         // Blue views with intrinsiceContentSize
@@ -28,6 +29,12 @@ class IntrinsicViewController: UIViewController {
             println("  \(constraint)")
         }
         
+        // Green views with no constraints
+        println("\nGreen (no IB constraints) Constraints: " + NSStringFromCGSize(self.blueView.intrinsicContentSize()))
+        for constraint in self.greenView.constraints() {
+            println("  \(constraint)")
+        }
+        
         // Brown view with no Auto Layout (just AutoResizingMask)
         let newView = UIView(frame: CGRectMake(100, 300, 120, 200))
         newView.setTranslatesAutoresizingMaskIntoConstraints(true)
@@ -37,8 +44,7 @@ class IntrinsicViewController: UIViewController {
         for constraint in newView.constraints() {
             println("  \(constraint)")
         }
-        println(newView.autoresizingMask)
-        newView.addVisualConstraints("H:[brown(115)]", views: ["brown":newView])
+//        newView.addVisualConstraints("H:[brown(115)]", views: ["brown":newView])
 
     }
 }

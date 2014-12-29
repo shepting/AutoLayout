@@ -22,4 +22,6 @@ import UIKit
     
     override var description: String { get { return "BlueViewRelease" } }
     
+    var descriptionAccessory: String { get { return "BlueViewAccessory" } }
+    
 }

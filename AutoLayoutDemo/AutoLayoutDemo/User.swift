@@ -31,7 +31,7 @@ class User: NSObject {
             "http://api.randomuser.me/portraits/men/7.jpg",
             "http://api.randomuser.me/portraits/men/6.jpg"]
         let url = NSURL(string: profileURLs[index])
-        profileURL = url
+        profileURL = url!
     }
     
 }
